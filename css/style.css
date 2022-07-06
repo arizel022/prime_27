@@ -58,6 +58,8 @@ a {
 
 :root {
   --font-color: #333333;
+  --accent-color: #005541;
+  --grey-color: #C5C5C5;
 }
 
 body {
@@ -111,6 +113,46 @@ body {
   margin-bottom: 60px;
 }
 
-.text:not(:last-child){
-margin-bottom:  30px;
+.text:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skills-list {
+  width: 665px;
+}
+
+.skills-item:not(:last-child) {
+  margin-bottom: 86px;
+}
+
+.skills-text {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.skills-green {
+  height: 32px;
+  background-color: var(--accent-color);
+
+}
+
+.skills-grey {
+  height: 32px;
+  width: 90%;
+  background-color: var(--grey-color);
+
+}
+
+.skills-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
