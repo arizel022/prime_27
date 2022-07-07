@@ -59,7 +59,7 @@ a {
 :root {
   --font-color: #333333;
   --accent-color: #005541;
-  --grey-color: #C5C5C5;
+  --grey-color: #c5c5c5;
 }
 
 body {
@@ -87,6 +87,21 @@ body {
   background-color: #00261d;
 }
 
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 70px 0;
+  align-items: center;
+}
+
+.header-list {
+  display: flex;
+}
+
+.header-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .header-link {
   color: #fff;
   font-weight: 600;
@@ -105,6 +120,30 @@ body {
   opacity: 0.7;
 }
 
+.hero {
+  background-color: red;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: calc(100vh - 193px);
+}
+
+.hero-title {
+  border: 2px solid green;
+  color: #fff;
+  font-weight: 700;
+  font-size: 90px;
+  max-width: 80%;
+}
+
+.hero-subtitle {
+  font-weight: 400;
+  font-size: 48px;
+  display: block;
+}
 
 .title {
   font-weight: 700;
@@ -141,14 +180,12 @@ body {
 .skills-green {
   height: 32px;
   background-color: var(--accent-color);
-
 }
 
 .skills-grey {
   height: 32px;
   width: 90%;
   background-color: var(--grey-color);
-
 }
 
 .skills-item {
