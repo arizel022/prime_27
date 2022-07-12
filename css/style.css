@@ -354,3 +354,11 @@ body {
 
 }
 
+.contacts__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__content {
+  width: 530px;
+}
