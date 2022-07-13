@@ -289,8 +289,37 @@ body {
   font-size: 16px;
 }
 
-/*elements position*/
 
+.portfolio {
+  padding-top: 0;
+  text-align: center;
+}
+
+.portfolio__list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+
+.portfolio__item:not(:last-child) {
+  margin-right: 45px;
+}
+
+.portfolio__btn {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.portfolio__btn.mixitup-control-active {
+  color: var(--accent-color);
+}
+
+.porfolio__gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 45px;
+  margin-bottom: 60px;
+}
 
 /*  REVIEW SECTION */
 
